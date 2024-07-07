@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(243deg 17.71% 12.38%);
+    padding: 20px 100px;
+    position: sticky;
+    /* position: -webkit-sticky; */
+    background-image: url(../images/bg.jpg);
+    top: 0;
+    z-index: 9999;
+}
+header h1 {
+    /* background-color: rgb(228, 243, 241); */
+    font-weight: bold;
+    font-size: 36px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: rgb(226, 240, 235);
+  list-style: none;
+  text-decoration: none;
+}
+
+/* hero start */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.hero-form {
+    background-color: rgb(222, 235, 246);
+    padding: 20px 40px;
+}
+.hero-form h2 {
+    font-size: large;
+    padding-right: 20px;
+
+}
+.hero-form img {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    min-width: 200px;
+}
+.flex h2 {
+    font-size: 25px;
+    padding-right: 20px;
+
+}
+.flex-p {
+    border-left: 3px solid;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 10px;
+
+}
+
+
+.flex1{
+    border-left: 3px solid;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.relative {
+    position: relative;
+
+}
+.relative img {
+    width: 100%;
+}
+.flex2 img {
+    width: 100%;
+}
+.absolute {
+    position: absolute;
+    border: 1px solid #333;
+    background: #e3e3e3;
+    padding: 10px;
+    bottom: 50px;
+    left: 30px;
+}
+
+
+.absolute h3 {
+    background-color: aqua;
+}
+
+.id {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contact-wrapper {
+    background-color: rgb(32, 32, 97);
+    color: rgb(235, 220, 14);
+    font-size: 45px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.contact {
+    margin: 7px 0;
+    width: 100%;
+
+    
+}
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+.style {
+    padding: 16px 10px;
+}
+.style li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: rgb(222, 241, 17);
+}
+
+.card img {
+    width: 200px;
+    border-radius: 30%;
+}
+.card {
+    /* border: 2px solid rgb(21, 21, 26); */
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card h3 {
+    /* background-color: rgb(8, 79, 145); */
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.card li a {
+    font-size: 25px;
+}
+.card p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.card h3:hover {
+    color: rgb(12, 30, 224);
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(177, 243, 46);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    footer h3 {
+        text-align: center;
+        width: 100%;
+      }
+
+    .hero, .hero-form {
+        width: 100%;
+      }
+    .container {
+        width: 80%;
+    }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    section {
+      width: 100%;
+    }
